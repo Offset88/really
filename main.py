@@ -34,10 +34,10 @@ amour = ["Les gens t'aiment à 0%❤️","Les gens t'aiment à 20%❤️","Les g
 class Bot(BaseBot):
     async def on_start(self, session_metadata: SessionMetadata) -> None:
         print("funcionando")
-        await self.highrise.walk_to(Position(14.0 , 8.0, 10.5 , "FrontRight"))
+        await self.highrise.walk_to(Position(17.5 , 0.0, 12.5 , "FrontRight"))
     async def on_user_join(self, user: User, position: Position | AnchorPosition) -> None:
         print(f"{user.username} entrou na sala")   
-        await self.highrise.chat(f"💀BIENVENUE💀 {user.username} GO SUR LA PISTE DE DANCE")
+        await self.highrise.chat(f"🎉𝐁𝐈𝐄𝐍𝐕𝐄𝐍𝐔𝐄🎉𝐎𝐍 𝐌𝐘 𝐁𝐈𝐑𝐓𝐇𝐃𝐀𝐘🎉 {user.username}  🥰𝐉'𝐄𝐒𝐏È𝐑𝐄 𝐐𝐔𝐄 𝐓𝐔 𝐍'𝐀 𝐏𝐀𝐒 𝐎𝐔𝐁𝐋𝐈É 𝐌𝐎𝐍 𝐂𝐀𝐃𝐄𝐀𝐔")
       
         await self.highrise.send_emote("idle_singing")
       
